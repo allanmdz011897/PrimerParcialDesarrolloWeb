@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {CabeceraModule} from "./cabecera/cabecera.module";
+import {SidebarModule} from "./sidebar/sidebar.module";
+import {PrincipalModule} from "./principal/principal.module";
+import {FooterModule} from "./footer/footer.module";
+import {ModalModule} from "./modal/modal.module";
+
+
+
 
 @NgModule({
   declarations: [
@@ -10,7 +17,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CabeceraModule,
+    SidebarModule,
+    PrincipalModule,
+    FooterModule,
+    ModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
